@@ -220,11 +220,5 @@ void main()
 	cout<<"___________________________";
 	gotoxy(31,16);
 	cout<<"V I S H A L  S O N I";
-	gotoxy(31,18);
-	cout<<"K S H I T I Z  R A J";
-	gotoxy(28.5,20);
-	cout<<"A L B E R T  A B R A H A M";
-	gotoxy(28.5,22);
-	cout<<"A B H I S H T  S H A R M A";
 	getch();
 }
