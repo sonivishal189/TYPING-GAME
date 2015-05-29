@@ -45,7 +45,7 @@ void match(char a[])
 		}
 		if(i>=76 && i<=151)
 		{
-			gotoxy(x++,14);
+			gotoxy(x++,15);
 			ch=getche();
 			t++;
 			if(ch==a[i])
@@ -93,14 +93,16 @@ void match(char a[])
 	clrscr();
 	if(ch!='1')
 	clk1=clock();
-	gotoxy(34,10);
+	gotoxy(34,8);
 	cout<<"Mistakes = "<<mistakes;
-	gotoxy(31,12);
+	gotoxy(31,10);
 	clk2=(clk1-clk)/CLK_TCK;
 	cout<<"Time Taken = "<<clk2<<" sec";
-	gotoxy(33,14);
+	gotoxy(33,12);
 	float acc=(wpm*100)/t;
 	cout<<"Accuracy = "<<acc<<" %";
+	gotoxy(23.5,14);
+	cout<<"Typing speed = "<<(t*60)/clk2<<" words per minute";
 	gotoxy(17,20);
 	cout<<"Enter 1 if you want to choose any other lesson";
 	char c;
@@ -220,5 +222,11 @@ void main()
 	cout<<"___________________________";
 	gotoxy(31,16);
 	cout<<"V I S H A L  S O N I";
+	gotoxy(31,18);
+	cout<<"K S H I T I Z  R A J";
+	gotoxy(28.5,20);
+	cout<<"A L B E R T  A B R A H A M";
+	gotoxy(28.5,22);
+	cout<<"A B H I S H T  S H A R M A";
 	getch();
 }
